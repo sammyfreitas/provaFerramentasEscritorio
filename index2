@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Prova Escrita - Ferramentas de Escritório</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: lightblue;
+      color: #333;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 16px;
+      color: #004080;
+      font-weight: 600;
+    }
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 900px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      color: #004080;
+    }
+    .timer {
+      font-size: 24px;
+      font-weight: bold;
+      color: red;
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    textarea, input[type="text"] {
+      width: 100%;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      padding: 8px;
+      font-size: 14px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #004080;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .footer {
+      margin-top: 40px;
+      font-style: italic;
+      color: #555;
+      text-align: center;
+    }
+    .resumo {
+      background: #eef;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 10px;
+      display: none;
+      white-space: pre-wrap;
+      font-family: monospace;
+    }
+    ul {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <p><strong>Curso de Operador de Sistemas Computacionais em Rede</strong></p>
+      <p>Senai Maracanã - Prof. Anthony Freitas</p>
+    </div>
+
+    <h1>Prova Escrita - Ferramentas de Escritório</h1>
+    <div class="timer" id="timer">Tempo restante: 2:00:00</div>
+
+    <label for="nome">Nome completo do aluno:</label>
+    <input type="text" id="nome" placeholder="Digite seu nome completo aqui">
+
+    <h2>Instruções gerais</h2>
+    <p>Esta prova possui <strong>4 partes</strong>:</p>
+    <ol>
+      <li><strong>Parte 1: Word</strong> – Crie um documento com texto formatado conforme instruções abaixo.</li>
+      <li><strong>Parte 2: Excel</strong> – Monte uma planilha com fórmulas e gráficos conforme solicitado.</li>
+      <li><strong>Parte 3: PowerPoint</strong> – Prepare uma apresentação com slides sobre o tema indicado.</li>
+      <li><strong>Parte 4: Internet e Segurança da Informação</strong> – Responda as questões abaixo neste formulário.</li>
+    </ol>
+    <p>Você deverá entregar <strong>4 arquivos separados</strong> no Google Classroom, um para cada parte.</p>
+    <p>O tempo total para toda a prova é de <strong>2 horas</strong>.</p>
+
+    <h2>Parte 1: Microsoft Word</h2>
+    	<p>Crie um documento no Microsoft Word com o tema <strong>"Segurança de Redes"</strong> contendo:</p>
+    <ul>
+      <li>Capa com título e seu nome</li>
+      <li>Sumário automático</li>
+      <li>Título e subtítulo formatados</li>
+      <li>Texto com ao menos um parágrafo</li>
+      <li>Rodapé com número de página</li>
+    </ul>
+    <p>Salve o arquivo e envie via Google Classroom.</p>
+
+    <h2>Parte 2: Microsoft Excel</h2>
+ 	   <p>Abra a planilha disponível no link a seguir e preencha com as fórmulas solicitadas:</p>
+ 	   <p><a href="https://github.com/sammyfreitas/provaFerramentasEscritorio/raw/main/PlanilhaExcelProva.xlsx" target="_blank">Baixar planilha Excel da prova</a></p>
+ 	   <p>A planilha possui 10 produtos e os preços em 3 lojas. Você deve:</p>
+    <ul>
+      <li>Calcular a média de preços por produto (função <code>MÉDIA</code>)</li>
+      <li>Determinar o menor preço por produto (função <code>MÍNIMO</code>)</li>
+      <li>Usar a função <code>SE</code> para indicar qual loja tem o menor preço</li>
+    </ul>
+ 	   <p>Salve o arquivo e envie via Google Classroom.</p>
+
+    <h2>Parte 3: Microsoft PowerPoint</h2>
+ 	<p>Crie uma apresentação com o tema <strong>"Segurança em Redes"</strong> contendo:</p>
+    <ul>
+      <li>Pelo menos 1 slide com <strong>WordArt</strong> para destacar o título</li>
+      <li>Pelo menos 1 <strong>SmartArt</strong> explicando os elementos da segurança da informação (ex: Confidencialidade, Integridade, Disponibilidade).</li>
+      <li>Estética limpa e profissional.</li>
+    </ul>
+ 	<p>Salve o arquivo e envie via Google Classroom.</p>
+
+    <h2>Parte 4: Internet e Segurança da Informação</h2>
+    <form id="provaForm">
+      <label>1. Explique a diferença entre malware e ransomware. Dê exemplos.</label>
+      <textarea id="resposta1" rows="4" placeholder="Escreva sua resposta aqui..."></textarea>
+
+      <label>2. Qual das senhas abaixo você considera mais segura? Justifique sua escolha.</label><br>
+      <input type="radio" name="senha" value="senha123"> senha123<br>
+      <input type="radio" name="senha" value="MariaSilva2020"> MariaSilva2020<br>
+      <input type="radio" name="senha" value="P@ssw0rd!"> P@ssw0rd!<br>
+      <input type="radio" name="senha" value="admin"> admin<br>
+      <input type="radio" name="senha" value="!Luiz.Ferreira#2024"> !Luiz.Ferreira#2024<br>
+      <input type="radio" name="senha" value="qwerty"> qwerty<br>
+      <textarea id="resposta2" rows="4" placeholder="Justifique sua escolha aqui..."></textarea>
+
+      <label>3. Marque os sites que você considera seguros:</label><br>
+      <input type="checkbox" name="siteSeguro" value="https://www.google.com"> https://www.google.com<br>
+      <input type="checkbox" name="siteSeguro" value="http://neverssl.com"> http://neverssl.com<br>
+      <input type="checkbox" name="siteSeguro" value="https://www.wikipedia.org"> https://www.wikipedia.org<br>
+      <input type="checkbox" name="siteSeguro" value="http://example.com"> http://example.com<br>
+      <input type="checkbox" name="siteSeguro" value="https://www.bb.com.br"> https://www.bb.com.br<br>
+      <textarea id="resposta3" rows="4" placeholder="Justifique sua resposta aqui..."></textarea>
+
+      <label>4. Quais dados abaixo são considerados sensíveis pela LGPD? (Marque as opções que você julgar corretas)</label><br>
+      <input type="checkbox" name="lgpd" value="Nome completo"> Nome completo<br>
+      <input type="checkbox" name="lgpd" value="Religião"> Religião<br>
+      <input type="checkbox" name="lgpd" value="CPF"> CPF<br>
+      <input type="checkbox" name="lgpd" value="Opinião política"> Opinião política<br>
+      <input type="checkbox" name="lgpd" value="Endereço"> Endereço<br>
+      <input type="checkbox" name="lgpd" value="Dados genéticos"> Dados genéticos<br>
+      <textarea id="resposta4" rows="2" placeholder="Se quiser, justifique ou comente aqui..."></textarea>
+
+      <label>5. Leia as notícias abaixo e diga qual você considera verdadeira e qual falsa. Justifique.</label>
+      <ul>
+        <li><strong>Notícia A:</strong> Xuxa é vista em churrascaria comendo picanha. (Fonte: 06/06/25)</li>
+        <li><strong>Notícia B:</strong> Felipe Neto, artista do famoso reality show BBB processa emissora por uso indevido de imagem. (Fonte: Bing)</li>
+        <li><strong>Notícia C:</strong> Brasil anuncia vacinação gratuita contra a gripe para toda população, conforme Ministério da Saúde (Fonte: G1, 15/04/2025).</li>
+      </ul>
+      <textarea id="resposta5" rows="4" placeholder="Escreva sua análise aqui..."></textarea>
+
+      <button type="button" onclick="salvarRespostas()">Salvar respostas</button>
+    </form>
+
+    <div id="resumo" class="resumo"></div>
+
+    <div class="footer">
+      Após salvar, será gerado um arquivo de texto com suas respostas.  
+      Salve este arquivo e envie junto com os arquivos do Word, Excel e PowerPoint no Google Classroom.
+    </div>
+  </div>
+
+  <script>
+    let totalSeconds = 2 * 60 * 60; // 2 horas em segundos
+    const timerEl = document.getElementById("timer");
+
+    function updateTimer() {
+      let hours = Math.floor(totalSeconds / 3600);
+      let minutes = Math.floor((totalSeconds % 3600) / 60);
+      let seconds = totalSeconds % 60;
+
+      timerEl.textContent = `Tempo restante: ${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+      if (totalSeconds > 0) {
+        totalSeconds--;
+        setTimeout(updateTimer, 1000);
+      } else {
+        alert("Tempo esgotado! Salve suas respostas agora.");
+      }
+    }
+
+    function coletarCheckboxes(name) {
+      const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);
+      let valores = [];
+      checkboxes.forEach(cb => valores.push(cb.value));
+      return valores;
+    }
+
+    function coletarRadio(name) {
+      const radio = document.querySelector(`input[name="${name}"]:checked`);
+      return radio ? radio.value : null;
+    }
+
+    function salvarRespostas() {
+      const nome = document.getElementById("nome").value.trim() || "sem_nome";
+
+      const r1 = document.getElementById("resposta1").value.trim();
+      const senhaSelecionada = coletarRadio("senha") || "Nenhuma selecionada";
+      const r2 = document.getElementById("resposta2").value.trim();
+
+      const sitesSelecionados = coletarCheckboxes("siteSeguro");
+      const r3 = document.getElementById("resposta3").value.trim();
+
+      const lgpdSelecionados = coletarCheckboxes("lgpd");
+      const r4 = document.getElementById("resposta4").value.trim();
+
+      const r5 = document.getElementById("resposta5").value.trim();
+
+      let texto = `Prova - Ferramentas de Escritório\nAluno: ${nome}\n\n`;
+
+      texto += `1. Diferença entre malware e ransomware:\n${r1}\n\n`;
+
+      texto += `2. Senha selecionada: ${senhaSelecionada}\nJustificativa:\n${r2}\n\n`;
+
+      texto += `3. Sites considerados seguros:\n${sitesSelecionados.length > 0 ? sitesSelecionados.join(", ") : "Nenhum selecionado"}\nJustificativa:\n${r3}\n\n`;
+
+      texto += `4. Dados sensíveis selecionados:\n${lgpdSelecionados.length > 0 ? lgpdSelecionados.join(", ") : "Nenhum selecionado"}\nJustificativa:\n${r4}\n\n`;
+
+      texto += `5. Análise das notícias:\n${r5}\n\n`;
+
+      // Cria e dispara download do arquivo txt
+      const blob = new Blob([texto], {type: 'text/plain;charset=utf-8'});
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = `respostas_prova_${nome.replace(/\s+/g, "_").toLowerCase()}.txt`;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      alert("Arquivo gerado com sucesso! Salve o arquivo e anexe junto com os arquivos do Word, Excel e PowerPoint no Google Classroom.");
+    }
+
+    updateTimer();
+  </script>
+</body>
+</html>
