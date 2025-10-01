@@ -80,7 +80,7 @@
 <body>
   <div class="container">
     <div class="header">
-      <p><strong>Curso de Operador de Sistemas Computacionais em Rede</strong></p>
+      <p><strong>Curso de Desenvolvedor de Soluções Tecnológicas</strong></p>
       <p>Senai Maracanã - Prof. Anthony Freitas</p>
     </div>
 
@@ -91,24 +91,31 @@
     <input type="text" id="nome" placeholder="Digite seu nome completo aqui">
 
     <h2>Instruções gerais</h2>
-    <p>Esta prova possui <strong>4 partes</strong>:</p>
+    <p>Esta prova possui <strong>3 partes</strong>:</p>
     <ol>
       <li><strong>Parte 1: Word</strong> – Crie um documento com texto formatado conforme instruções abaixo.</li>
       <li><strong>Parte 2: Excel</strong> – Monte uma planilha com fórmulas e gráficos conforme solicitado.</li>
-      <li><strong>Parte 3: PowerPoint</strong> – Prepare uma apresentação com slides sobre o tema indicado.</li>
-      <li><strong>Parte 4: Internet e Segurança da Informação</strong> – Responda as questões abaixo neste formulário.</li>
+      <li><strong>Parte 3 Internet e Segurança da Informação</strong> – Responda as questões abaixo neste formulário.</li>
     </ol>
-    <p>Você deverá entregar <strong>4 arquivos separados</strong> no Google Classroom, um para cada parte.</p>
-    <p>O tempo total para toda a prova é de <strong>2 horas</strong>.</p>
+    <p>Você deverá entregar <strong>3 arquivos </strong> no Google Classroom, um para cada parte.</p>
+    <p>O tempo total para toda a prova é de <strong>2 horas para Word e Internet e 2h após o intervalo para Excel</strong>.</p>
 
     <h2>Parte 1: Microsoft Word</h2>
     	<p>Crie um documento no Microsoft Word com o tema <strong>"Segurança de Redes"</strong> contendo:</p>
     <ul>
       <li>Capa com título e seu nome</li>
       <li>Sumário automático</li>
-      <li>Título e subtítulo formatados</li>
-      <li>Texto com ao menos um parágrafo</li>
-      <li>Rodapé com número de página</li>
+      <li>3 Títulos com pelo menos 2 subtítulos formatados</li>
+      <li>Fonte Arial ou Time New Roman, tamanho 12 (exceto para titulos)</li>
+      <li>Titulo 1 - tamanho 16, negrito, Titulo 2 - tamanho 14, negrito, Titulo 3 - tamanho 12, negrito e itálico</li>
+      <li>Cada parte do texto deverá ter pelo menos 4 parágrafos</li>
+      <li>Cabeçalho com as informações: </li>
+         <ul>
+           <li>(negrito, tam16)Curso de Desenvolvedor de Soluções Tecnológicas</li> 
+           <li>(negrito, tam14)UC Ferramentas de Escritório</li> 
+           <li>(negrito e itálico, tam12)Senai Maracanã/RJ - Prof Anthony Freitas</li> 
+         </ul>
+      <li>Rodapé com número de páginas</li>
     </ul>
     <p>Salve o arquivo e envie via Google Classroom.</p>
 
@@ -123,16 +130,7 @@
     </ul>
  	   <p>Salve o arquivo e envie via Google Classroom.</p>
 
-    <h2>Parte 3: Microsoft PowerPoint</h2>
- 	<p>Crie uma apresentação com o tema <strong>"Segurança em Redes"</strong> contendo:</p>
-    <ul>
-      <li>Pelo menos 1 slide com <strong>WordArt</strong> para destacar o título</li>
-      <li>Pelo menos 1 <strong>SmartArt</strong> explicando os elementos da segurança da informação (ex: Confidencialidade, Integridade, Disponibilidade).</li>
-      <li>Estética limpa e profissional.</li>
-    </ul>
- 	<p>Salve o arquivo e envie via Google Classroom.</p>
-
-    <h2>Parte 4: Internet e Segurança da Informação</h2>
+    <h2>Parte 3: Internet e Segurança da Informação</h2>
     <form id="provaForm">
       <label>1. Explique a diferença entre malware e ransomware. Dê exemplos.</label>
       <textarea id="resposta1" rows="4" placeholder="Escreva sua resposta aqui..."></textarea>
@@ -163,7 +161,7 @@
       <input type="checkbox" name="lgpd" value="Dados genéticos"> Dados genéticos<br>
       <textarea id="resposta4" rows="2" placeholder="Se quiser, justifique ou comente aqui..."></textarea>
 
-      <label>5. Leia as notícias abaixo e diga qual você considera verdadeira e qual falsa. Justifique.</label>
+      <label>5. Leia as notícias abaixo e diga qual você considera verdadeira e qual falsa. Justifique o porquê de ser verdadeira ou falsa.</label>
       <ul>
         <li><strong>Notícia A:</strong> Xuxa é vista em churrascaria comendo picanha. (Fonte: 06/06/25)</li>
         <li><strong>Notícia B:</strong> Felipe Neto, artista do famoso reality show BBB processa emissora por uso indevido de imagem. (Fonte: Bing)</li>
@@ -178,7 +176,7 @@
 
     <div class="footer">
       Após salvar, será gerado um arquivo de texto com suas respostas.  
-      Salve este arquivo e envie junto com os arquivos do Word, Excel e PowerPoint no Google Classroom.
+      Salve este arquivo e envie junto com os arquivos do Word e Excel no Google Classroom.
     </div>
   </div>
 
@@ -249,10 +247,11 @@
       link.click();
       document.body.removeChild(link);
 
-      alert("Arquivo gerado com sucesso! Salve o arquivo e anexe junto com os arquivos do Word, Excel e PowerPoint no Google Classroom.");
+      alert("Arquivo gerado com sucesso! Salve o arquivo e anexe junto com os arquivos do Word e Excel no Google Classroom.");
     }
 
     updateTimer();
   </script>
 </body>
 </html>
+
